@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Softex</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="./components/logosoftex.png" width="50%" alt="">
+    <p>
+      <a href="https://fap.softexrecife.org.br/" target="_blank">Softex Recife</a>
+    </p>
+  </header>
+  <div class="campo">
+    <h1 id="titulo">Atividade softex</h1>
+  </div>
+
+  <form>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label><strong>Nome:</strong></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+        <input type="text" name="Sobrenome" id="sobrenome">
+      </div>
+    </fieldset>
+
+    <div class="campo">
+      <label for="email"><strong> E-mail</strong></label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div class="campo">
+      <label><strong>Qual seu curso?</strong></label>
+      <label>
+        <input type="radio" name="devweb" value="frontend">Front-end
+      </label>
+
+      <label>
+        <input type="radio" name="devweb" id="backend">Back-end
+      </label>
+      <label>
+
+        <input type="radio" name="devweb" id="fullstack">Fullstack
+      </label>
+    </div>
+
+    <div class="campo">
+      <label for="horario"><strong>Horario do curso:</strong></label>
+      <select id="horario">
+        <option selected disabled value="">Selecione</option>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+      </select>
+    </div>
+
+    <fieldset class="grupo">
+      <div id="check">
+        <label><strong>Selecione as tecnologias usadas </strong></label>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia1">CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+        <label for="tecnologia1">Javascript</label>
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="React">
+        <label for="tecnologia1">React</label>
+        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Node">
+        <label for="tecnologia1">Node</label>
+        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Angular">
+        <label for="tecnologia1">Angular</label>
+      </div>
+
+      <div class="campo">
+        <br>
+        <label for=>Escreva o que esta achando do curso:</label>
+        <textarea name="feedback" id="feedback" rows="3" style="width: 26em"></textarea>
+      </div>
+
+      <button type="submit" class="botao">Enviar</button>
+
+  </form>
+
+</body>
+
+</html>
